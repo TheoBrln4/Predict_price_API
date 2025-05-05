@@ -55,8 +55,9 @@ First, it is required to create an ec2 instance :
  - Create a security key `.pem` if you don't have
 
 ### SSH connection
+On the terminal :
 ```
-ssh -i my_key.pem ec2-user@ec2-public-ip-adress on the terminal
+ssh -i my_key.pem ec2-user@ec2-public-ip-adress
 ```
 ### Install docker on the instance
 ```
