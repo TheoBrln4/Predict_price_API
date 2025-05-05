@@ -1,12 +1,12 @@
 # Forecasting housing prices API
-This project consists in dockerizing a Flask API that allows to predict prices by using a previously trained ML model.de
+This project consists in dockerizing a Flask API that allows predicting prices by using a previously trained ML model.
 
 ## Model presentation
-The file Price_pred.py includes the code of several DL or ML models. The dataset used is fetch_california_housing. There are 8 inputs and 1 output. For more : https://inria.github.io/scikit-learn-mooc/python_scripts/datasets_california_housing.html. The model choosen is the model based on random forest. It is put in a `.pkl` file and loaded in the API. There are some visualization tricks inside the code too.
+The file Price_pred.py includes the code of several DL or ML models. The dataset used is fetch_california_housing. There are 8 inputs and 1 output. For more info : https://inria.github.io/scikit-learn-mooc/python_scripts/datasets_california_housing.html. The model choosen is the model based on random forest. It is stored in a `.pkl` file and loaded by the API. There are some visualization techniques inside the code.
 
 ## API
 ### Endpoint
-- **POST /predict** : It uses the method POST to send the inputs in JSON and it retrieves the output in JSON too.
+- **POST /predict** : It uses the method POST to send the inputs in JSON format and it retrieves the output in JSON format as well.
 
 ### Request example with Postman
 
@@ -28,7 +28,7 @@ The file Price_pred.py includes the code of several DL or ML models. The dataset
 ### Use curl
 You can use curl to retrieve the output directly in the terminal through the following line :
 
-curl -X POST http://localhost:8000/predict -H "Content-Type: application/json" -d '{"features": [8.3252, 41.0, 6.984127, 1.023810, 322.0, 2.555556, 37.88, -122.23]]}'
+curl -X POST http://localhost:8000/predict -H "Content-Type: application/json" -d '{"features": [8.3252, 41.0, 6.984127, 1.023810, 322.0, 2.555556, 37.88, -122.23]}'
 
 ## Docker
 The dockerfile created an image to install the dependencies required to execute the API. It uses the frameworks in the requirements.txt
