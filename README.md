@@ -66,7 +66,7 @@ sudo yum install -y python3 python3-pip
 sudo yum install -y docker
 ```
 ### Run docker
-```
+```BASH
 sudo systemctl start docker
 sudo systemctl enable docker
 
