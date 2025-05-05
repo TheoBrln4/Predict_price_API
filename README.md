@@ -19,26 +19,30 @@ The file Price_pred.py includes the code of several DL or ML models. The dataset
 }
 ```
 ### Response example
+``` JSON
+
 {
     "prediction": [
         4.443321100000003
     ]
 }
-
+```
 ### Use curl
 You can use curl to retrieve the output directly in the terminal through the following line :
-
+```
 curl -X POST http://localhost:8000/predict -H "Content-Type: application/json" -d '{"features": [8.3252, 41.0, 6.984127, 1.023810, 322.0, 2.555556, 37.88, -122.23]}'
-
+```
 ## Docker
 The dockerfile created an image to install the dependencies required to execute the API. It uses the frameworks in the requirements.txt
 
 ### Build an image
+```
 docker build -t predict-price-api .
-
+```
 ### Run the container
+```
 docker run -p 8000:8000 predict-price-api
-
+```
 ### Test the API
 The link to test on Postman in local is : http://localhost:8000/predict
 
@@ -51,22 +55,26 @@ First, it is required to create an ec2 instance :
  - Create a security key `.pem` if you don't have
 
 ### SSH connection
+```
 ssh -i my_key.pem ec2-user@<ec2-public-ip-adress> on the terminal
-
+```
 ### Install docker on the instance
+```
 sudo yum update -y
 sudo yum install -y python3 python3-pip
 sudo yum install -y docker
-
+```
 ### Run docker
+```
 sudo systemctl start docker
 sudo systemctl enable docker
 
-sudo docker --version (verification)
-
+sudo docker --version #verification
+```
 ### Clone git
+```
 git clone https://github.com/TheoBrln4/Predict_price_API.git
 cd Predict_price_API
-
+```
 Then you can follow the section "Docker" and test the API with the link : http://<ec2-public-ip-adress>:8000/predict with Postman.
 
