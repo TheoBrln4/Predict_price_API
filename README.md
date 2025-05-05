@@ -77,6 +77,6 @@ sudo docker --version # Verification
 git clone https://github.com/TheoBrln4/Predict_price_API.git
 cd Predict_price_API
 ```
-Then you can follow the section "Docker" and test the API with the link : 
-`http://ec2-public-ip-adress:8000/predict with Postman`
+Then you can follow the section "Docker" and test the API on Postman with the link : 
+`http://ec2-public-ip-adress:8000/predict`
 
