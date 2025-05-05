@@ -56,7 +56,7 @@ First, it is required to create an ec2 instance :
 
 ### SSH connection
 ```
-ssh -i my_key.pem ec2-user@<ec2-public-ip-adress> on the terminal
+ssh -i my_key.pem ec2-user@ec2-public-ip-adress on the terminal
 ```
 ### Install docker on the instance
 ```
@@ -76,5 +76,5 @@ sudo docker --version # Verification
 git clone https://github.com/TheoBrln4/Predict_price_API.git
 cd Predict_price_API
 ```
-Then you can follow the section "Docker" and test the API with the link : http://<ec2-public-ip-adress>:8000/predict with Postman.
+Then you can follow the section "Docker" and test the API with the link : http://ec2-public-ip-adress:8000/predict with Postman.
 
