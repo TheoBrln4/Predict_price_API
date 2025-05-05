@@ -17,7 +17,7 @@ The file Price_pred.py includes the code of several DL or ML models. The dataset
 {
     "features": [8.3252, 41.0, 6.984127, 1.023810, 322.0, 2.555556, 37.88, -122.23]
 }
-
+```
 ### Response example
 {
     "prediction": [
