@@ -18,6 +18,7 @@ The file Price_pred.py includes the code of several DL or ML models. The dataset
     "features": [8.3252, 41.0, 6.984127, 1.023810, 322.0, 2.555556, 37.88, -122.23]
 }
 ```
+The inputs refer to the type of data that the model used to train with. You can check the link in the Model presentation section.
 ### Response example
 ``` JSON
 
@@ -27,6 +28,7 @@ The file Price_pred.py includes the code of several DL or ML models. The dataset
     ]
 }
 ```
+The output refers to the price of the house.
 ### Use curl
 You can use curl to retrieve the output directly in the terminal through the following line :
 ```
